@@ -1004,6 +1004,17 @@ h3 {
     bottom: -130px; } }
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px) {
+  h2 {
+    font-size: 37.5px;
+    line-height: 48px;
+    letter-spacing: -0.94px; }
+    h2 .first-letter {
+      font-size: 87.5px;
+      line-height: 48px; }
+  .home {
+    padding: 71px 0 35px; } }
+
 @media only screen and (max-width: 480px) {
   /**/ }
 
