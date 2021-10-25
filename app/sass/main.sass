@@ -1,0 +1,644 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  background: #000
+  color: #fff
+
+html, body
+  overflow-x: hidden
+  height: 100%
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0
+  box-sizing: border-box
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+button, .btn
+  padding: 0
+  font-family: $default-font
+  outline: none
+  border: none
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+    border: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  font-family: $default-font
+  text-align: center
+
+
+.btn-accent
+  color: #9a4d23
+  font-size: 33.5px
+  font-weight: bold
+  line-height: 1.93
+  letter-spacing: 0.84px
+  text-transform: uppercase
+  background: url("../img/bg-btn.png") no-repeat center
+    size: 100%
+  width: 560px
+  height: 213px
+  margin: 0 auto
+  &:hover
+    color: #fff
+
+.container
+  width: 100%
+  max-width: 1330px
+  padding: 0 15px
+  margin: 0 auto
+  display: flex
+  flex-wrap: wrap
+  position: relative
+
+strong
+  font-weight: bold
+  display: inline-block
+
+h1
+  font-family: $font
+  margin: 0 0 50px
+  text-transform: uppercase
+  font-size: 104px
+  .title-decor
+    display: block
+    position: relative
+    padding: 0 0 0 240px
+    &:before
+      content: ''
+      position: absolute
+      mix-blend-mode: screen
+      width: 255px
+      height: 242px
+      background: url("../img/decor-title.png") no-repeat center
+        size: 100%
+      left: 124px
+      top: -90px
+  .first-letter
+    font-size: 234.5px
+    line-height: 100.5px
+
+
+.first-letter
+  display: inline-block
+  font-family: $font2
+
+.subtitle
+  color: #d39451
+  font-size: 48px
+  font-weight: bold
+  text-transform: uppercase
+  line-height: 1.6
+
+h2
+  width: 100%
+  text-align: center
+  text-transform: uppercase
+  font-size: 60px
+  line-height: 69px
+  font-family: $font
+  .first-letter
+    font-size: 140px
+    line-height: 77px
+
+h3
+  text-transform: uppercase
+  font-size: 60px
+  font-family: $font
+  line-height: 1.2
+
+.title-gradient
+  width: 100%
+  text-align: center
+  font-size: 48px
+  font-family: $font
+  line-height: 75px
+  color: transparent
+  background-clip: text
+  -webkit-background-clip: text
+  background-image: url('../img/filter-title.jpg')
+  background-position: center
+  background-repeat: no-repeat
+  span
+    display: block
+    font-size: 33px
+    text-transform: none
+    font-weight: 300
+    font-family: $default-font
+    line-height: 1.3
+
+.box-text
+  font-size: 33px
+  font-weight: 300
+  width: 100%
+  line-height: 1.21
+  p
+    margin: 0 0 50px
+    &:last-child
+      margin: 0
+
+
+.w-100
+  width: 100%
+
+.wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+
+//main
+.home
+  position: relative
+  padding: 130px 0 75px
+  .btn
+    margin: 100px auto 0
+
+.name-author
+  font-size: 90px
+  font-weight: 300
+  line-height: 0.86
+  strong
+    font-weight: bold
+    display: block
+
+.date-course
+  text-transform: uppercase
+  color: $red
+  font-size: 65px
+  font-family: $font
+  line-height: 1.18
+  margin: 60px 0 20px
+
+.price-course
+  font-size: 40px
+  font-weight: 300
+  max-width: 365px
+  width: 100%
+  color: $accent
+  line-height: 1.23
+
+.main-decor
+  position: absolute
+
+.main-decor1
+  left: 0
+  top: 0
+
+.main-decor2
+  top: 0
+  left: 55%
+  transform: translate(-50%,0)
+
+.main-decor3
+  left: 0
+  bottom: -300px
+
+.main-decor4
+  bottom: -90px
+  right: 0
+  max-width: 804px
+  width: 100%
+
+//about
+.about
+  position: relative
+  text-align: center
+  padding: 0 0 89px
+  h2
+    margin: 100px auto 0
+
+  .title-gradient
+    margin: 55px 0 40px
+    &:last-child
+      margin: 0
+  .title-gradient-img
+    margin: 160px 0 0
+
+.about-footer
+  margin: 1000px auto 0
+  width: 100%
+  .box-text
+    p
+      margin: 0 auto 30px
+      &:last-child
+        margin: 0 auto
+
+.title-gradient-dots
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    z-index: -1
+    width: 1377px
+    height: 988px
+    background: url("../img/decor-dots.png") no-repeat center
+      size: 100%
+    top: 0
+    left: 35%
+    transform: translate(-50%,0)
+
+.about-decor1
+  bottom: 0
+  left: 0
+  width: 100%
+  text-align: center
+  img
+    margin: 0 auto
+
+.about-decor2
+  left: 50%
+  transform: translate(-50%,0)
+  bottom: 27.5%
+  z-index: -1
+
+//author
+.author-wrapper
+  position: relative
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  padding: 387px 40px 586px
+
+
+.author-bg
+  position: absolute
+  z-index: 1
+  width: 100%
+  top: 0
+  left: 0
+  img
+    width: 100%
+
+.author-img
+  position: relative
+  max-width: 644px
+  width: 100%
+  margin: 0 70px 0 -90px
+  img
+    width: 100%
+
+.author-text
+  max-width: 415px
+  width: 100%
+  position: relative
+  text-align: center
+  &:before
+    content: ''
+    position: absolute
+    top: -188px
+    left: 0
+    width: 179px
+    height: 138px
+    background: url("../img/quote.png") no-repeat center
+      size: 100%
+  h4
+    font-size: 33px
+    text-transform: uppercase
+  h3
+    margin: 0 auto 40px
+
+
+
+.author-decor
+  position: absolute
+  z-index: 1
+  left: 45%
+  top: 46%
+  transform: translate(-50%,0)
+
+//for-whom
+.for-whom
+  position: relative
+  h2
+    margin: 0 auto 93px
+  .wrapper
+    justify-content: space-between
+
+.for-whom-box
+  width: calc(20% - 20px)
+  letter-spacing: -0.33px
+  text-align: center
+  color: #e1e1e1
+  &__icon
+    position: relative
+    width: 219px
+    height: 219px
+    margin: 0 auto 50px
+    img
+      min-width: 349px
+      width: 349px
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+
+
+//result-learn
+.result-learn
+  position: relative
+  padding: 657px 0 562px
+  background: url("../img/result-bg.png") no-repeat center top
+    size: 100%
+  z-index: -1
+  color: #000
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 1292px
+    background: url("../img/result-bg2.png") no-repeat center top
+      size: cover
+    z-index: 1
+    bottom: -220px
+    left: 0
+  .container
+    max-width: 1645px
+  h2
+    margin: 0 auto 100px
+  .wrapper
+    justify-content: center
+
+.result-learn-box
+  margin: 0 0 68px
+  width: calc(25% - 30px)
+  text-align: center
+  color: #000
+  &__icon
+    position: relative
+    height: 330px
+    display: flex
+    align-items: center
+    justify-content: center
+  .box-text
+    max-width: 250px
+    width: 100%
+    margin: 0 auto
+
+.result-learn__decor
+  width: 100%
+  margin: 0 -45px 0 45px
+  img
+    width: 100%
+
+//stages-learn
+.stages-learn
+  padding: 0 0 50px
+
+.panel-collapse
+  width: 100%
+  background: #000
+  border-radius: 35px
+  margin: 0 0 160px
+  box-shadow: 0 0 100px rgba(#d49858, .9)
+  &:last-child
+    margin: 0
+  &__body
+    width: 100%
+    padding: 96px 95px
+    display: none
+  h3
+    font-size: 48px
+    line-height: 38px
+  &__head
+    position: relative
+    width: 100%
+    padding: 88px 97px 83px 90px
+    display: flex
+    align-items: center
+    border-radius: 35px
+
+.stages-learn__number
+  width: 363px
+  min-width: 363px
+  height: 363px
+  background: url("../img/number-bg.png") no-repeat center
+    size: 100%
+  font-size: 92px
+  line-height: 77px
+  letter-spacing: -2.3px
+  font-family: $font
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  color: #dfb16f
+
+.stages-learn__number-name
+  transition: .3s ease
+  color: #fff
+  font-family: $font
+  font-size: 60px
+  letter-spacing: -1.5px
+  line-height: 1.28
+  text-transform: uppercase
+  .first-letter
+    font-size: 140px
+    line-height: 77px
+    letter-spacing: -14.0px
+
+.stages-learn__name
+  padding: 0 0 0 148px
+  margin: 0 0 -20px
+  font-size: 30px
+  text-transform: uppercase
+  font-family: $font
+  letter-spacing: -0.75px
+  line-height: 1.35
+
+
+.stages-learn__item
+  margin: 0 0 70px
+  &:last-child
+    margin: 0
+
+.date-learn
+  font-size: 48px
+  line-height: 48px
+  color: #dfb16f
+  text-transform: uppercase
+  font-family: $font
+  margin: 5px 0 10px
+
+.panel-collapse.trigger
+  .stages-learn__number-name
+    color: #dfb16f
+  .panel-collapse__head
+    box-shadow: 0 0 50px rgba(#d49858, .9)
+  .panel-collapse__body
+    display: block
+
+.panel-collapse-decor
+  position: absolute
+
+.panel-collapse-decor1
+  left: 55%
+  transform: translateX(-50%)
+  top: -70px
+
+.panel-collapse-decor2
+  left: 53%
+  bottom: -107px
+
+.panel-collapse-decor3
+  top: -75px
+  left: 20%
+
+.panel-collapse-decor4
+  left: 30%
+  bottom: -103px
+
+.btn-toggle
+  text-transform: uppercase
+  text-decoration: underline
+  position: absolute
+  bottom: 106px
+  right: 97px
+  font-size: 30px
+  font-weight: bold
+  color: #dfb16f
+  line-height: 1.27
+  &:hover, &:focus
+    text-decoration: underline
+
+.panel-collapse__body-head
+  width: 100%
+  padding: 0 0 98px
+  margin: 0 0 107px
+  border-bottom: 2px solid #67472a
+  .title-gradient
+    font-size: 64.5px
+    text-align: left
+    margin: 89px 0 14px
+  h6
+    font-size: 30px
+    text-transform: uppercase
+    line-height: 1.33
+
+.d-inline
+  display: inline-block
+
+.color-accent
+  color: #dfb16f
+
+//.certificate
+.certificate
+  margin: 101px 0 740px
+  h2
+    max-width: 960px
+    margin: 0 auto 20px
+
+.certificate-image
+  max-width: 1100px
+  width: 100%
+  position: relative
+  margin: 0 auto
+  img
+    width: 100%
+
+.img-lupe
+  position: absolute
+  right: 140px
+  bottom: -150px
+  max-width: 302px
+
+
+@import "media"
+// Всегда в конце

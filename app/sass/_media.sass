@@ -1,0 +1,353 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1700px)
+  .result-learn
+    -webkit-background-size: cover
+    background-size: cover
+
+@media only screen and (max-width: 1620px)
+  .author-img
+    max-width: 500px
+
+  .author-wrapper
+    padding: 332px 0 432px
+    min-width: 1700px
+    left: 50%
+    transform: translateX(-50%)
+    margin: 0
+
+@media only screen and (max-width: 1575px)
+  .main-decor4
+    max-width: 650px
+
+  .main-decor3
+    max-width: 277px
+    bottom: -200px
+
+  .main-decor2
+    max-width: 500px
+
+  .about-footer
+    margin: 843px 0 0
+
+  .about-decor2
+    width: 1515px
+
+  .about .title-gradient-img
+    margin: 106px 0 0
+
+
+
+@media only screen and (max-width: 1200px)
+  .main-decor2
+    max-width: 400px
+
+  .main-decor4
+    max-width: 550px
+
+
+  .certificate
+    margin: 90px 0 920px
+
+  .img-lupe
+    max-width: 203px
+    bottom: -28px
+
+  .panel-collapse-decor2
+    max-width: 158px
+    top: 40px
+    left: -70px
+
+  .panel-collapse-decor1
+    max-width: 190px
+    right: -120px
+    top: 40%
+    left: auto
+
+  .panel-collapse-decor3
+    max-width: 150px
+    top: 55%
+    left: 40px
+    transform: rotate(180deg)
+
+  .panel-collapse-decor4
+    max-width: 170px
+    right: -40px
+    top: 20%
+    left: auto
+
+
+  .btn-toggle
+    bottom: 0
+    right: 0
+    position: relative
+    transform: none
+    margin: 38px auto 0
+
+  .panel-collapse__head
+    flex-wrap: wrap
+    padding: 0 40px 40px
+
+  .stages-learn__name
+    order: 1
+    padding: 0
+    text-align: center
+    width: 100%
+
+  .stages-learn__number-name
+    text-align: center
+    letter-spacing: -1.5px
+    margin: 0 auto 18px
+    .first-letter
+      font-size: 60px
+      font-family: $font
+      letter-spacing: -1.5px
+      line-height: 1.28
+
+  .stages-learn__number
+    margin: -100px auto 0
+
+  .panel-collapse__head-content
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+
+  .panel-collapse__body
+    padding: 110px 50px 100px
+
+  .panel-collapse__body-head .title-gradient
+    font-size: 50px
+    margin: 73px 0 0
+    padding: 62px 0 0
+    border-top: 2px solid $accent
+
+  .panel-collapse__body-head
+    border: none
+    padding: 0
+    margin: 0 0 110px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  .main-decor1, .main-decor2
+    display: none
+
+  .home
+    padding: 114px 0 57px
+    position: relative
+
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+      background: url("../img/decor1-tablet.png") no-repeat center
+        size: 100%
+      width: 768px
+      height: 1080px
+
+    .btn
+      margin: 0 auto
+
+  .subtitle
+    text-align: center
+    max-width: 235px
+    width: 100%
+    font-size: 38px
+    line-height: 1.26
+    margin: 54px auto 420px
+
+  .name-author
+    order: -1
+    text-align: center
+
+  .home-content
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  h1
+    font-size: 88px
+    line-height: 0.96
+    margin: 0 auto
+
+    .first-letter
+      font-size: 197.5px
+
+  .title-decor
+    padding: 0 0 0 200px
+
+  h1 .title-decor:before
+    width: 215px
+    height: 204px
+    left: 143px
+
+  .date-course
+    font-size: 60px
+    line-height: 1
+    max-width: 315px
+    width: 100%
+    margin: 59px auto 46px
+    text-align: center
+
+  .price-course
+    text-align: center
+    font-size: 33px
+    max-width: none
+
+  .main-decor4
+    max-width: 476px
+    top: 344px
+
+  .main-decor3
+    bottom: auto
+    top: 306px
+
+  .author-img
+    max-width: 400px
+
+  .for-whom-box
+    width: 100%
+    margin: 0 0 80px
+    &:last-child
+      margin: 0
+    .box-text
+      max-width: 420px
+      margin: 0 auto
+
+  .for-whom h2
+    margin: 0 auto 84px
+
+  .result-learn
+    padding: 650px 0 650px
+
+    h2
+      margin: 0 auto 83px
+
+  .result-learn-box
+    width: 100%
+    margin: 0 auto 57px
+    .box-text
+      max-width: 490px
+
+  .result-learn__decor
+    margin: 0
+    width: calc(100% + 100px)
+
+  .certificate-image
+    max-width: 768px
+
+  .img-lupe
+    bottom: -100px
+    right: 100px
+
+@media only screen and (max-width: 850px)
+  .author-img
+    max-width: 644px
+    margin: 0
+    order: 1
+
+  .author-text
+    margin: 0 auto 60px
+
+  .author-decor
+    display: none
+
+  .author-bg
+    width: 100%
+    height: 100%
+    background: url("../img/autor-bg-tablet.png") no-repeat center top
+      size: contain
+    img
+      display: none
+
+  .author-wrapper
+    flex-direction: column
+    align-items: center
+    padding: 387px 40px 120px
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      width: 100%
+      height: 523px
+      background: url("../img/autor-decor-tablet2.png") no-repeat center
+        size: contain
+      z-index: 2
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+  .about-decor1
+    max-width: 768px
+    min-width: 768px
+    bottom: 370px
+    background: url("../img/bg2-tablet.png") no-repeat center
+      size: 100%
+    height: 927px
+
+    img
+      display: none
+
+  .about
+    .box-text
+      max-width: 660px
+      width: 100%
+      margin: 0 auto
+
+    .title-gradient span
+      max-width: 440px
+      margin: 0 auto
+
+  .about-decor2
+    bottom: 38%
+
+  .title-gradient-dots:before
+    width: 611px
+    height: 926px
+    background: url("../img/dots-tablet.png") no-repeat center
+      size: 100%
+    left: 50%
+    top: 60%
+
+  h3
+    font-size: 40px
+
+  .result-learn
+    padding: 650px 0 550px
+
+  .result-learn:before
+    background: url("../img/result-decor-tablet.png") no-repeat center top
+      size: 100%
+
+  .result-learn__decor
+    width: calc(100% + 30px)
+    margin: 0 -15px
+    height: 825px
+    background: url("../img/result-decor-tablet2.png") no-repeat center top
+      size: 100%
+    img
+      display: none
+
+
+  .img-lupe
+    right: 40px
+    bottom: -130px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px)
+  /**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+  /**/
+
